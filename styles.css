@@ -1,0 +1,112 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, darkgreen, lime);
+    margin-right: 15px;
+    
+}
+
+.title{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.Principle{
+ width: 60%;
+ margin-top: 50px;
+ margin-bottom: 30px;
+ background: #fff;
+ color: #696969;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 25px 20px;
+ border-radius: 10px;
+}
+
+.Principle input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+
+
+.Principle img{
+    width: 100px;
+    height: 75px;
+}
+
+.Rate{
+    width: 60%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-radius: 10px;  
+}
+ 
+.Rate input{
+ border: 0;
+ outline: 0;
+ font-size: 24px;
+}
+
+.Rate img{
+    width: 100px;
+    height: 75px;
+}
+
+
+.Time{
+    width: 60%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-radius: 10px;  
+}
+ 
+.Time input{
+ border: 0;
+ outline: 0;
+ font-size: 24px;
+}
+
+
+.Time img{
+    width: 100px;
+    height: 75px;
+}
+
+.calc{
+    display: flex;
+
+}
+
+
+.calc img{
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+}
+
+
+.result input{
+    background:linear-gradient(135deg, darkgreen,lime);
+    border: 0;
+    height: 40px;
+    font-size:larger;
+    outline: 0;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+    border-radius: 15px;
+}

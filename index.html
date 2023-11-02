@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+       <h1>Interest Calculator</h1>
+    </div>
+    <div class="input">
+        <div class="Principle">
+         <input type="number" placeholder="Enter Principle" id="Principle" >
+         <img src="prince.png">
+        </div>
+        <div class="Rate">
+            <input type="number" placeholder="Enter Rate"  id="Rate">
+            <img src="rate.png">
+        </div>
+        <div class="Time">
+            <input type="number" placeholder="Enter Time"  id ="Time">
+            <img src="Time.png">
+        </div>
+        <div class="calc">
+            <h1>Press the button to calculate the amount you need to pay</h1>
+            <img src="calc.png" onclick= "simpleintrest()">
+        </div>
+        <div class="result">
+            <h1>You need to pay <input type="number" id="result">rupees, with <input type="number" id  = "extra">rupees as Interest(S.I)</h1>
+            <h1>You need to pay <input type="number" id="answer">rupees, with <input type="number" id="inter">rupees as Interest(C.I)</h1>
+        </div>
+    </div>
+<script>
+    const A = 100;
+    function simpleintrest(){
+        let p = Principle.value ;
+        let r = Rate.value ;
+        let t = Time.value ;
+
+        let result01 = (((p*r*t)/(A))-(-p));
+        result.value = result01 ;
+
+        let answer01 = p*(Math.pow(1-(-r/100),t));
+        answer.value = Math.floor(answer01) ;
+
+        let si = ((p*r*t)/(100));
+        extra.value = si;
+
+        let ci = Math.floor(p*(Math.pow(1-(-r/100),t)) - (p));
+        inter.value = ci ;
+    }
+</script>
+</body>
+</html>
